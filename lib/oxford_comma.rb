@@ -1,8 +1,14 @@
-def oxford_comma(words)
-  if words.length == 2
-    return "#{words[0]} and #{words[1]}"
-  elsif words.length > 2
-    words[-1].insert(0 , "and ")
+
+array = ["apple"]
+def oxford_comma(array)
+  if array.length == 2
+  array[-2] << " and "
+  array.join
+  elsif array.length == 1
+  	array.join
+  elsif array.length > 2
+    array[-1].prepend "and "
+	array.join(", ")
   end
-  array.join(", ")    
 end
+
