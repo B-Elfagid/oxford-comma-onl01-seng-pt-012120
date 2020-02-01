@@ -1,6 +1,6 @@
 
+array = ["apple"]
 def oxford_comma(array)
-  array = ["cat"]
   if array.length == 2
   array[-2] << " and "
   array.join
@@ -12,3 +12,4 @@ def oxford_comma(array)
   end
 end
 
+oxford_comma(array)
